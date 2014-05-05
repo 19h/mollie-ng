@@ -1,4 +1,9 @@
-![Mollie](http://www.mollie.nl/files/Mollie-Logo-Style-Small.png)
+**This module is a fork of the "official" Mollie API client for Node and sports these differences:**
+ - No Coffeescript or comparable crap
+ - No native modules for useless version lookups
+ - Actually, no native modules. So this is node-version agnostic
+ - No underscore-hipster rubbish
+ - Actual Love
 
 # Mollie API client for Node #
 
