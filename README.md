@@ -21,16 +21,18 @@ To use the Mollie API client, the following things are required:
 
 By far the easiest way to install the Mollie API client is to install it with [npm](https://npmjs.org/).
 
-    $ npm install mollie-api-node
+    $ npm install mollie-ng
+
+Additionally, add it to your project in order make deployments easier:
 
         {
             "dependencies": {
-                "mollie-api-node": ">= 1.0.x"
+                "mollie-ng": "~1.x.x"
             }
         }
 
 
-You may also git checkout or [download all the files](https://github.com/mollie/mollie-api-node/archive/master.zip), and include the Mollie API client manually.
+You may also git checkout or [download all the files](https://github.com/KenanSulayman/mollie-ng/archive/master.zip), and include the Mollie API client manually. Though, *you shouldn't.*
 
 ## How to receive payments ##
 
