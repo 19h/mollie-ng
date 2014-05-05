@@ -3,7 +3,11 @@
         "version": "1.0.0",
         "description": "Official Mollie API client for Node (by Mollie B.V.)",
         "homepage": "https://github.com/KenanSulayman/node-mollie",
-        "author": "Mollie B.V. <info@mollie.nl>",
+        "author": "Mollie B.V.",
+        "contributors": [{
+            "name": "Kenan Sulayman",
+            "email": "kenan@sly.mn"
+        }],
         "keywords": ["mollie", "payment", "service", "ideal", "creditcard", "mistercash", "paypal", "paysafecard", "payments", "gateway"],
         "devDependencies": {
                 "underscore": ">= 1.5.0"
