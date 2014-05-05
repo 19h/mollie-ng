@@ -47,13 +47,13 @@ To successfully receive a payment, these steps should be implemented:
 Requiring the library.
 
 ```javascript
-    Mollie = require("mollie-api-node");
+    var Mollie = require("mollie-api-node");
 ```
 
 Initializing the Mollie API client, and setting your API key.
 
 ```javascript
-    mollie = new Mollie.API.Client;
+    var mollie = new Mollie.API.Client;
     mollie.setApiKey("test_dHar4XY7LxsDOtmnkVtjNVWXLSlXsM");
 ```
 
@@ -62,10 +62,12 @@ Creating a new payment.
 ```javascript
     mollie.payments.create({
         amount:      10.00,
-        description: "My first API payment",
-        redirectUrl: "https://webshop.example.org/order/12345/"
+        description: "Payment description",
+        redirectUrl: "https://example.com/order/12345/"
     },  function (payment) {
-        response.writeHead(302, { Location: payment.getPaymentUrl() })
+        response.writeHead(302, {
+            Location: payment.getPaymentUrl()
+        })
     });
 ```
 
@@ -73,11 +75,12 @@ Retrieving a payment.
 
 ```javascript
     mollie.payments.get(
-        payment.id
-    ,   function (payment) {
-        if (payment.isPaid())
-            console.log("Payment received.");
-    });
+        payment.id,
+        function (payment) {
+            if (payment.isPaid())
+                console.log("Payment received.");
+        }
+    );
 ```
 
 
