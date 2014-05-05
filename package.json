@@ -1,0 +1,22 @@
+{
+    "name": "mollie-api-node",
+    "version": "1.0.1",
+    "description": "Official Mollie API client for Node (by Mollie B.V.)",
+    "homepage": "https://github.com/mollie/mollie-api-node",
+    "author": "Mollie B.V. <info@mollie.nl>",
+    "keywords": ["mollie", "payment", "service", "ideal", "creditcard", "mistercash", "paypal", "paysafecard", "payments", "gateway"],
+    "dependencies": {
+        "underscore": ">= 1.5.0"
+    },
+    "optionalDependencies": {
+        "exec-sync": ">= 0.1.6"
+    },
+    "main": "./lib/mollie",
+    "repository": "git://github.com/mollie/mollie-api-node",
+    "scripts": {
+        "prepublish": "npm prune"
+    },
+    "engines": {
+        "node": ">= 0.8.0"
+    }
+}
