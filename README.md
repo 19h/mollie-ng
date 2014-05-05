@@ -94,5 +94,3 @@ Contact: [www.mollie.nl](http://www.mollie.nl) — info@mollie.nl — +31 20-612
 + [More information about Bank transfer via Mollie](https://www.mollie.nl/betaaldiensten/overboeking/)
 + [More information about PayPal via Mollie](https://www.mollie.nl/betaaldiensten/paypal/)
 + [More information about paysafecard via Mollie](https://www.mollie.nl/betaaldiensten/paysafecard/)
-
-![Powered By Mollie](http://www.mollie.nl/images/badge-betaling-medium.png)
