@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/apx/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/apx/.npm/mollie-ng/1.0.1/package.tgz', '.' ]
+11 verbose tarball /Users/apx/.npm/mollie-ng/1.0.1/package.tgz
+12 verbose folder .
+13 info prepublish mollie-ng@1.0.1
+14 verbose unsafe-perm in lifecycle true
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/apx/.npm/1f1177db-tar.lock
+17 silly lockFile 14453a98--npm-mollie-ng-1-0-1-package-tgz tar:///Users/apx/.npm/mollie-ng/1.0.1/package.tgz
+18 verbose lock tar:///Users/apx/.npm/mollie-ng/1.0.1/package.tgz /Users/apx/.npm/14453a98--npm-mollie-ng-1-0-1-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 14453a98--npm-mollie-ng-1-0-1-package-tgz tar:///Users/apx/.npm/mollie-ng/1.0.1/package.tgz
+22 silly lockFile 14453a98--npm-mollie-ng-1-0-1-package-tgz tar:///Users/apx/.npm/mollie-ng/1.0.1/package.tgz
+23 silly lockFile dddea3b5--apx-npm-mollie-ng-1-0-1-package /Users/apx/.npm/mollie-ng/1.0.1/package
+24 verbose lock /Users/apx/.npm/mollie-ng/1.0.1/package /Users/apx/.npm/dddea3b5--apx-npm-mollie-ng-1-0-1-package.lock
+25 silly lockFile dddea3b5--apx-npm-mollie-ng-1-0-1-package /Users/apx/.npm/mollie-ng/1.0.1/package
+26 silly lockFile dddea3b5--apx-npm-mollie-ng-1-0-1-package /Users/apx/.npm/mollie-ng/1.0.1/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'mollie-ng',
+29 silly publish   version: '1.0.1',
+29 silly publish   description: 'Mollie API client (deprecated)',
+29 silly publish   homepage: 'https://github.com/KenanSulayman/node-mollie',
+29 silly publish   author: { name: 'Mollie B.V.' },
+29 silly publish   contributors: [ { name: 'Kenan Sulayman', email: 'kenan@sly.mn' } ],
+29 silly publish   main: './mollie',
+29 silly publish   dependencies: { 'mollie-api-node': '*' },
+29 silly publish   scripts: { prepublish: 'npm prune', postinstall: 'node deprecation' },
+29 silly publish   engines: { node: '>= 0.8.0' },
+29 silly publish   gitHead: '4fd73145ac09983c13210ccdf74ea73521d650ec',
+29 silly publish   readme: 'ERROR: No README data found!',
+29 silly publish   _id: 'mollie-ng@1.0.1',
+29 silly publish   _shasum: '6a86bc9a63b1eb1ac221163d04c7f6915d6b99ac',
+29 silly publish   _from: '.' }
+30 verbose request where is /mollie-ng
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 9565a53abc4f97cf
+33 verbose url raw /mollie-ng
+34 verbose url resolving [ 'https://registry.npmjs.org/', './mollie-ng' ]
+35 verbose url resolved https://registry.npmjs.org/mollie-ng
+36 verbose request where is https://registry.npmjs.org/mollie-ng
+37 info trying registry request attempt 1 at 23:09:28
+38 http PUT https://registry.npmjs.org/mollie-ng
+39 http 403 https://registry.npmjs.org/mollie-ng
+40 verbose headers { date: 'Wed, 17 Dec 2014 22:09:27 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '2202',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-lcy1135-LCY',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1418854166.651673,VS0,VE608',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 1.0.1
+42 error old={"name":"mollie-ng","version":"1.0.1","description":"Fork of the official Mollie API client for Node, library agnostic and with actual love.","homepage":"https://github.com/KenanSulayman/node-mollie","author":{"name":"Mollie B.V."},"contributors":[{"name":"Kenan Sulayman","email":"kenan@sly.mn"}],"keywords":["mollie","payment","service","ideal","creditcard","mistercash","paypal","paysafecard","payments","gateway"],"devDependencies":{"underscore":">= 1.5.0"},"main":"./lib/mollie","repository":{"type":"git","url":"git://github.com/KenanSulayman/node-mollie"},"scripts":{"prepublish":"npm prune"},"engines":{"node":">= 0.8.0"},"bugs":{"url":"https://github.com/KenanSulayman/node-mollie/issues"},"_id":"mollie-ng@1.0.1","dist":{"shasum":"fd08bd7090b1440e5ba41e84fc7e8125b7dac8d6","tarball":"http://registry.npmjs.org/mollie-ng/-/mollie-ng-1.0.1.tgz"},"_from":".","_npmVersion":"1.3.22","_npmUser":{"name":"kenansulayman","email":"kenan@sly.mn"},"maintainers":[{"name":"kenansulayman","email":"kenan@sly.mn"}]}
+42 error new={"name":"mollie-ng","version":"1.0.1","description":"Mollie API client (deprecated)","homepage":"https://github.com/KenanSulayman/node-mollie","author":{"name":"Mollie B.V."},"contributors":[{"name":"Kenan Sulayman","email":"kenan@sly.mn"}],"main":"./mollie","dependencies":{"mollie-api-node":"*"},"scripts":{"prepublish":"npm prune","postinstall":"node deprecation"},"engines":{"node":">= 0.8.0"},"gitHead":"4fd73145ac09983c13210ccdf74ea73521d650ec","readme":"ERROR: No README data found!","_id":"mollie-ng@1.0.1","_shasum":"6a86bc9a63b1eb1ac221163d04c7f6915d6b99ac","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"kenansulayman","email":"kenan@sly.mn"},"maintainers":[{"name":"kenansulayman","email":"kenan@sly.mn"}],"dist":{"shasum":"6a86bc9a63b1eb1ac221163d04c7f6915d6b99ac","tarball":"http://registry.npmjs.org/mollie-ng/-/mollie-ng-1.0.1.tgz"}}: mollie-ng
+42 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+42 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+42 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:943:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Darwin 14.1.0
+45 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error cwd /Users/apx/Desktop/mollie-ng
+47 error node -v v0.10.33
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]

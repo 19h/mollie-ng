@@ -1,21 +1,20 @@
 {
         "name": "mollie-ng",
-        "version": "1.0.0",
-        "description": "Official Mollie API client for Node (by Mollie B.V.)",
+        "version": "1.1.0",
+        "description": "Mollie API client (deprecated)",
         "homepage": "https://github.com/KenanSulayman/node-mollie",
         "author": "Mollie B.V.",
         "contributors": [{
             "name": "Kenan Sulayman",
             "email": "kenan@sly.mn"
         }],
-        "keywords": ["mollie", "payment", "service", "ideal", "creditcard", "mistercash", "paypal", "paysafecard", "payments", "gateway"],
-        "devDependencies": {
-                "underscore": ">= 1.5.0"
+        "main": "./mollie",
+        "dependencies": {
+            "mollie-api-node": "*"
         },
-        "main": "./lib/mollie",
-        "repository": "git://github.com/KenanSulayman/node-mollie",
         "scripts": {
-                "prepublish": "npm prune"
+                "prepublish": "npm prune",
+                "postinstall": "node deprecation"
         },
         "engines": {
                 "node": ">= 0.8.0"
